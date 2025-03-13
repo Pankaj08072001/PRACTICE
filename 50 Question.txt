@@ -1,0 +1,748 @@
+Programs on control statements in Java
+==========================================================================================================
+
+Program-1
+Define a method which returns the 1 if the given number is even, in other case return 0
+Name of method: isEven() // which accepts an integer value as argument and return 1 if the given number is even, else retrun 0.
+Argument: int
+Return type: an integer value 
+Example, if x = 22, return 1. if x = 35, return 0
+
+Program-2
+Define a method which returns the greatest number among two numbers.
+Write the method with the following specifications: 
+Name of method: getGreatest() // which accepts two integer values as argument and return the greatest value.
+Arguments: two argument of type integer
+Return type: an integer value 
+Specifications: The value returned by the method getGreatest() is determined by the following rules:
+If any of the given numbers are negative, return -1.
+If any of the given numbers are zero, return -2.
+If the given numbers are positive, return the greatest.
+
+Program-3
+Define a method which returns the least number among two numbers.
+Write the method with the following specifications: 
+Name of method: getLeastNum() // which accepts two integer values as argument and return the least value.
+Arguments: two argument of type integer
+Return type: an integer value 
+Specifications: The value returned by the method getLeastNum() is determined by the following rules:
+If any of the given numbers are negative, return -1.
+If any of the given numbers are zero, return -2.
+If the given numbers are positive, return the least number.
+
+Program-4
+Define a method which returns the number it if it is an even number, if the number is odd then return the next multiple of 10.
+Write the method with the following specifications: 
+Name of method: oddRounder() // which accepts an integer value as argument and return the same value if it is an even number, if the value is odd then return the next multiple of 10. 
+Arguments: one argument of type integer
+Return Type: an integer value 
+Example if x = 24 then return 24, if x = 25 then return 30.
+Specifications: The value returned by the method oddRounder() is determined by the following rules:
+If any of the given number is negative, return -1.
+If any of the given number is zero, return -2.
+If the given number is even, return the same number.
+If the given number is odd, return the next multiple of 10.
+
+Program-5
+Define a method which returns the 1 if the given number is positive, return -1 if the given number is negative, return 0 if the given number is 0.
+Name of method findSign() 
+Arguments: one argument of type integer
+Return Type: an integer value 
+Test Cases
+1.	If any of the given number is positive, return 1.
+2.	If any of the given number is negative, return -1.
+3.	If any of the given number is zero, return 0.
+
+Program-6
+Define a method which returns the string as "Even" if the given number is an even number, return "Odd" if the given number is an odd number, return string as "Invalid Input" if the given number is lessthan or equal to 0.
+Write the method with the following specifications: 
+Name of method: isEvenOrOdd() // which accepts an integer value as argument.
+Arguments: one argument of type integer
+Return Type: a String value (Even/Odd/Invalid Input) 
+Specifications: The value returned by the method isEvenOrOdd() is determined by the following rules:
+If the given number is negative or zero, return "Invalid Input"
+If the given number is even, return "Even"
+If the given number is odd, return "Odd"
+
+Program-7
+Define a method which returns the square of the given number if it is an even, return cube of the given number if it is an odd number.
+Write the method with the following specifications: 
+Name of method: calculate() // which accepts an integer value as argument and return square of the given value if it is an even, return cube of the given value if it is an odd number.
+Arguments: one argument of type integer
+Return Type: an integer value 
+Specifications: The value returned by the method calculates () is determined by the following rules:
+If the given number is negative or zero, return -1.
+If the given number is even, return square of the number.
+If the given number is odd, return cube of the given number.
+
+Program-8
+Define a method which returns the sum of three numbers after rounding off each number to the next multiple of 10. If any of the given number is multiple of 10 dont change it's value
+Write the method with the following specifications: 
+Name of method: sumOfMultiples() // which accepts three integer value as argument and return the sum of three numbers after rounding off each number to the next multiple of 10. 
+Arguments: three argument of type integer
+Return Type: an integer value 
+Example
+If a = 23, b = 34, c = 69
+   30 + 40 + 70 = 140
+If a = 23, b = 34, c = 50
+   30 + 40 + 50 = 120
+Specifications: The value returned by the method sumOfMultiples() is determined by the following rules:
+If any of the given number is negative or zero, return -1.
+
+Program-9
+Define a method which returns the sum of three rounded numbers. If the right most digit of the number is less than 5, then round off it's value to the previous multiple of 10 otherwise if the right most digit of the number is greater or equal to 5, then round off to the next multiple of 10. 
+Write the method with the following specifications: 
+Name of method sumOfRoundedValues() // which accepts three integer value as argument and return the sum of three rounded numbers.
+Arguments: three argument of type integer
+Return Type: an integer value 
+Example
+If a = 23, b = 34, c = 66
+   20 + 30 + 70 = 120
+If a = 23, b = 37, c = 55
+   20 + 40 + 60 = 120
+Specifications: The value returned by the method sumOfRoundedValues() is determined by the following rules:
+If any of the given number is negative or zero, return -1.
+If any of the given numbers right most digit is of the number is lessthan 5, then round off its value to the previous multiple of 10 otherwise if the right most digit of the number is greater or equal to 5, then round off to the next multiple of 10. 
+
+Program-10
+Define a method which accepts two value as arguments (an integer and boolean) and return the string indicating when the alarm should ring.The first argument indicating day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if we are on vacation or not.
+Write the method with the following specifications: 
+Name of method ringAlarm() // which accepts two arguments, first indicating day of the week and second a boolean indiacting if we are on vacation.
+Arguments: two arguments of type integer and boolean
+Return Type: an string value 
+Specifications: The value returned by the method ringAlarm() is determined by the following rules:
+If the first argument value is not between 0 to 6, return "Invalid Inputs"
+If the second value is not boolean value true or false, return "Invalid Inputs"
+If the first argument value is between 1 to 5 indicating the week day's and second value is true indicating on vacation, return "10:00"
+If the first argument value is between 1 to 5 indicating the week day's and second value is false indicating not on vacation, return "07:00"
+If the first argument value is 0 or 6 indicating the weekend day's and second value is true indicating on vacation, return "OFF"
+If the first argument value is 0 or 6 indicating the weekend day's and second value is false indicating not on vacation, return "10:00"
+
+Program-11
+Define a method which accepts three boolean value as arguments and return true if any of the two values are true, otherwise return false.
+Write the method with the following specifications: 
+Name of method countBoolean() // which accepts three boolean arguments, return true if any of the two values are true, else return false.
+Arguments: two arguments of type boolean
+Return Type: a boolean value 
+Specifications: The value returned by the method countBoolean() is determined by the following rules:
+If b1 = true, b2 = true, b3 = true then, return true
+If b1 = true, b2 = true, b3 = false then, return true
+If b1 = true, b2 = false, b3 = false then, return false
+If b1 = false, b2 = false, b3 = false then, return false
+
+
+Program-12
+Define a method which returns a String containing natural numbers between a range of two numbers separated by a single space. Solve it without using loops.
+Write the method with the following specifications:
+Name of method: getNaturalNumbers()
+Arguments: 2 Arguments of int type. 
+Return Type: A String value
+Values must not be negative. If yes, then return -1 as string.                                
+Values must not be 0. If yes, then return -2 as string. 
+Natural Numbers must be returned as one string with every value separated by single blank space.
+Consider that, the first argument value is less than the second argument number
+
+Program-13
+Define a method which returns a String containing natural numbers between ranges of two numbers separated by a single space.
+Write the method with the following specifications:
+Name of method: getNumbersInRange()
+Arguments: 2 Arguments of int type 
+Return Type: A String value
+Values must not be negative. If yes, then return -1 as string.                      
+ Values must not be same. If yes, then return -2 as string.                         
+ 1st arguments value must not be greater than 2nd arguments value. If yes, then return -3 as string.
+Exclude the first and last value and return the result as one string with every value separated by single blank space.
+
+Program-14
+Define a method which returns a String containing natural numbers between a given ranges separated by a single space.
+Write the method with following specifications
+Name of method: getNumbersInRange // accepts two integer value, return the number between the given range
+Arguments: Two arguments of integer type, start_val and end_val
+Return Type: A String value
+Example:
+Inputs: 10 1
+Output: 9 8 7 6 5 4 3 2
+Inputs: 3 0
+Output: 2 1
+Inputs: 3 2
+Output: -4 // as the difference between 3 and 2 is 1
+Specifications: The value returned by the method getNumbersInRange() is determined by the following rules:
+If the input values are negative, return "-1" as string
+If the input values are equal, return "-2" as string
+If the first argument value is less than second argument value, return "-3" as string
+If the difference between second argument and first argument is 1, return "-4" as string
+In other case return a string with every value separated by single blank space.
+Note: Numbers in range must not include start value and end value.
+
+Program-15
+Define a method which returns a string of natural numbers within a range of two numbers with a given step/increment factor. 
+Write the method with following specifications
+Name of method: getNumbersInRange
+Arguments: 3 arguments of type int // first argument as start value
+				   // second argument as end value
+				   // third argument is the step/increment value
+Return Type: A String value
+Values must not be negative. If yes, then return -1 as string.                       
+Values must not be same. If yes, then return -2 as string.                          
+1st value must not be greater than 2nd value. If yes, then return -3 as string.      
+Numbers in range must not include start and end value.                                      
+Numbers in range must be returned as one string with every value separated by single blank space.
+
+Program-16
+Define a method which returns a string of all numbers between 1 and the given input value.
+Write the method with following specifications
+Name of method: getFourPerLine
+Arguments: 1 argument of type int
+Return Type: A String value
+Value must not be negative . If yes, then return -1 as string.                        
+Value must not be 0. If yes, then return -2 as string.                              
+ Value must not be greater than 99. If yes, then return -3 as string.
+Numbers in range must be returned as one string with every value separated by single blank space.
+Ensure a new line after every set of 4 values.
+
+-------------------------------------------complete-------------------------------------------------------
+
+Program-17
+Define a method which accepts 2 numeric arguments and returns a box of the same size as a string with asterisk '*' symbol.
+Write the method with following specifications
+Name of method : createBoxPattern
+Arguments: 2 Integer Arguments // 1st argument represents Number of Rows.
+				// 2nd argument represents Number of Columns.
+Return Type: A String value
+Value must not be negative. If yes, then return -1 as string.                     
+Value must not be 0. If yes, then return -2 as string.                            
+1st value is rows and 2nd value is columns.
+Box must be created using star symbol separated using a single blank space
+For example, 1st value=4 & 2nd value=5 then output must be:-        
+ *  *  *  *  *
+ *           *
+ *           *
+ *  *  *  *  *
+
+Program-18
+Define a method which accepts 1 numeric argument and returns a String of stars (*).
+For instance if the given input is 3,then First line must have One star, Second Line Two stars, Third line Three Stars.  
+Write the method with following specifications
+Name of method: createStarPattern
+Arguments: 1 Integer Argument // Represents Number of Rows.
+Return Type: A String value
+Value must not be negative. If yes, then return -1 as string.                       
+Value must not be 0. If yes, then return -2 as string.                             
+Pattern must be created using star symbol separated by single blank space.
+ Example:
+Input: 4
+Output:
+ *
+ *  *
+ *  *  *
+ *  *  *  *
+
+Program-19
+Define a method which accepts 1 numeric argument and returns a pattern of numbers as a string.
+Write the method with following specifications
+Name of method: NumberPattern4
+Arguments: 1 Integer Argument // Represents Number of Rows.
+Return Type: A String value
+Value must not be negative. If yes, then return -1 as string.
+Value must not be 0. If yes, then return -2 as string.
+Value is rows.
+Pattern must be created using numbers separated by single blank space 
+Example:
+Input: 5
+Output:
+1
+2 4
+3 6 9
+4 8 12 16
+5 10 15 20 25
+
+Program-20
+Define a Method that checks for whether a given input is a prime number or not, and return a string.
+Write the method with following specifications
+Name of method: checkPrime
+Arguments: 1 Integer Argument 
+Return Type: A String value
+Value must not be negative. If yes, then return -1 as string.
+Value must not be 0 or 1. If yes, then return -2 as string.
+If value is a prime number, then return true as string otherwise return false as string.
+
+Program-21
+Define a Method that checks for whether a given input is a palindrome number or not, and return a string.
+Write the method with following specifications
+Name of method: checkPalindrome
+Arguments: 1 Integer Argument 
+Return Type: A String value
+Value must not be negative. If yes, then return   -1 as string.
+Value must not be from 0 to 9. If yes, then return -2 as string.
+If value is a palindrome, then return true as string otherwise return false as string.
+
+Program-22
+Define a method which accepts a 4-digit value as number and checks whether the number is armstrong or not.
+Armstrong number: An Armstrong number is an n-digit number that is equal to the sum of the nth powers of its digits.
+For this program we need 4-digit armstrong number and is calculated as
+Input: 1634 is a 4-digit armstrong number defined as
+	1^4 + 6^4 + 3^4 + 4^4 = 1 + 1296 + 81 + 256 = 1634
+Write the method with the following specifications: 
+Name of method: checkArmStrong() // which accepts an integer value as argument and return the String as specified below.
+Arguments: one argument of type integer
+Return Type: a String value
+Specifications: The value returned by the method checkArmStrong() is determined by the following rules:
+If the input value is negative, return "-1" as string.   
+If the input value is not a 4-digit number, return "-2" as string.                               
+If the input value is a 4-digit number and is an armstrong, return "ArmStrong Number" as string otherwise return "Not ArmStrong Number" as string. 
+Note: The string values you are returning are case sensitive.
+
+Program-23
+Define a method which accepts a value as number and returns the factorial of the value.
+Write the method with the following specifications: 
+Name of method getFactorial() // which accepts an integer value as argument and return the factorial of the given value.
+Arguments: one argument of type integer
+Return Type: an integer value
+Specifications: The value returned by the method getFactorial() is determined by the following rules:
+Value must not be negative. If yes, then return   -1           
+Value must not be 0. If yes, then return -2
+
+Program-24
+Define a method which accepts an integer value as argument and return the factors of the given value.
+Write the method with the following specifications: 
+Name of method getFactors() // which accepts an integer value as argument and return a String.
+Arguments: one argument of type integer
+Return Type: String value
+Input: 28
+Output: "1 2 4 7 14 28"
+Input: -20
+Output: "-1"
+Input: 0
+Output: "-2"
+Specifications: The value returned by the method getFactors() is determined by the following rules:
+1) If the value is negative, return "-1" as string              
+2) If the value is zero, return "-2" as string
+3) In other case, return the string, concatenating all the factors of the given number separating each factor with a blank space.
+
+Program-25
+Define a method which accepts a value as number and returns the sum of factors of the value.
+Write the method with the following specifications: 
+Name of method getSumOfFactors() // which accepts an integer value as argument and return a String.
+Arguments: one argument of type integer
+Return Type: integer value
+Specifications: The value returned by the method getSumOfFactors() is determined by the following rules:
+Value must not be negative. If yes, then return   -1             
+Value must not be 0. If yes, then return -2.
+
+-------------------------------------------complete-----------------------------------------------------
+
+Program-26
+Define a method which accepts 2 values as number and returns the even numbers between the 2 values.
+Write the method with the following specifications
+Name of method getEvenNumbers() // which accepts 2 integer values as arguments and return the even numbers between the range.
+Arguments: Two arguments of type integer
+Return Type: String value
+Note: If the first argument value is greater than second value, generate even numbers from first value to second value. If the second value is less than first value, generate even numbers from second value to first.
+Specifications: The value returned by the method getEvenNumbers() is determined by the following rules
+Values must not be negative. If yes, then return   -1 as string.                                                   
+Value must not be 0 or same. If yes, then return -2 as string.                                            
+The values must be returned as a single string  where each value is separated by a single blank space.
+For Example:
+Input: 10 20
+Output: 10 12 14 16 18 20
+Input: 20 10
+Output: 10 12 14 16 18 20
+
+Program-27
+Define a method which accepts 3 values as number and checks and returns the name of the type of triangle generated.
+Write the method with the following specifications: 
+Name of method findTriangle() 
+Arguments: three arguments of type integers
+Return Type: String value 
+Specifications: The value returned by the method findTriangle() is determined by the following rules:
+Values must not be 0. If yes, then return -1 as string.                                                              
+Values must not be negative. If yes, then return       -2 as string.                                 
+Sum of two sides must be greater than the third side. If no, then return -3 as string
+If it’s a triangle with valid sides, then return as string whether the triangle formed is EQUILATERAL, ISOSCELES or SCALENE.
+
+Program-28
+Define a method which accepts 2 values as number and returns the prime numbers between the values.
+Write the method with the following specifications: 
+Name of method: getPrimeNumbers() 
+Arguments: two arguments of type integers
+Return Type: String value 
+Specifications: The value returned by the method getPrimeNumbers() is determined by the following rules:
+Value must not be negative. If yes, then return -1 as string.                                                               
+1st value must not be greater than or equal to 2nd value. If yes, then return -2 as string.                                       
+Prime Numbers must be returned as one string with every value separated by single blank space.
+           
+Program-29
+Define a method which accepts two integer values as arguments and return the sum of prime numbers between the given range.
+Write the method with the following specifications
+Name of method getPrimeNumbersSum() // which accepts two integer values as argument and return the sum of all prime number between the range.
+Arguments: two arguments of type integer
+Return Type: an integer value
+Note: 1 is not a prime
+Specifications: The value returned by the method getPrimeNumbersSum() is determined by the following rules
+In any of the input value is negavie, return -1
+In any of the input value is zero, return -2
+If the first value is greater than or equal to second value, return - 3.
+
+Program-30
+Create a class with a method which can calculate the sum of first n natural numbers which are divisible by 3 or 5.
+Method Name 	calculateSum 
+Method Description 	Calculate Sum 
+Argument 	int n 
+Return Type 	int-sum 
+Logic 	Calculate the sum of first n natural numbers which are divisible by 3 or 5. 
+
+Program-31
+Create a class with a method to find the difference between the sum of the squares and the square of the sum of the first n natural numbers.
+Method Name 	calculateDifference 
+Method Description 	Calculate the difference 
+Argument 	int n 
+Return Type 	int - Sum 
+Logic 	Find the difference between the sum of the squares of the first n natural numbers and the square of their sum. 
+For Example if n is 10,you have to find 
+(1^2+2^2+3^2+….9^2+10^2)- 
+(1+2+3+4+5…+9+10)^2 
+
+Program-32
+Create a method to check if a number is a power of two or not
+Method Name 	checkNumber 
+Method Description 	Checks if the entered number is a power of two or not 
+Argument 	int n 
+Return Type 	boolean 
+Logic 	Check if the input is a power of two. 
+Ex: 8 is a power of 2 
+
+Program-33
+Create a method to find the sum of the first n even numbers that are divisible by 3 and 8
+Method Name 	findSum 
+Method Description 	Find the sum of first n even numbers that are divisible by 3 and 8 
+Argument 	Int 
+Return Type 	Int 
+Logic 	Sum of the multiples of first n even numbers that are divisible by 3 and 8 
+
+Program-34
+Create a method to find the sum of the cubes of the digits of an n digit number
+Method Name 	findSum 
+Method Description 	Find the sum cubes of the digits of an n digit number 
+Argument 	Int 
+Return Type 	Int 
+Logic 	Return the sum of cubes of the digits of an n digit number 
+Example 
+Input : 123 
+Output : 1^3+2^3+3^3= 1+8+27=36 
+Hint: Use %(mod) operator to separate each digit 
+
+Program-35
+Write a method to find the sum of the factorials of the first n numbers in the Fibonacci series. 
+Fibonacci series is given by 0 1 1 2 3 5 8…… 
+Factorial for a number m is given by factorial= m*m-1*m-2….1
+Method Name 	sumOfFactorial 
+Method Description 	Calculate sum 
+Argument 	int n 
+Return Type 	int 
+Logic 	1. Generate the first n elements in the Fibonacci series 
+2. Find the factorial of each element 
+3. Find the sum of the factorial 
+
+Program-36
+Write a method which can find the sum of the first n prime numbers. Prime numbers are numbers which have only 1 and the number itself as its factors. 2 is the only even prime number. 1 is neither prime nor composite. 
+Example: the 1st 5 prime numbers are 2,3,5,7,11 and sum is 28
+Method Name 	getPrimeSum 
+Method Description 	Get the sum of the first n prime numbers 
+Argument 	int n 
+Return Type 	Int 
+Logic 	Hint : 
+1. Use for loop to iterate over numbers from 2 to n, say loop variable i. 
+2. Use an inner loop with loop variable j which loops from to 2 to i/2. If for any j the remainder on dividing i by j is zero, the number is non-prime. If it is prime add the number to the sum. 
+
+Program-37
+Write a method which can accept an integer and return the binary, hexadecimal and octal equivalents of the number in a String array
+Method Name 	getFormats 
+Method Description 	Gets the binary,hexadecimal and octal formats of a number 
+Argument 	int 
+Return Type 	String 
+Logic 	Hint : 
+1. Use Integer wrapper class methods 
+
+Program-38
+Write a method which accepts a double number and finds the sum of the digits to the left and right of the decimal point. It should return the sum as String in the following format 
+Left side sum:Right side sum 
+Method Name 	getSum 
+Method Description 	Get the sum of digits on either sides of the decimal points in a double number 
+Argument 	double 
+Return Type 	String 
+Logic 	Hint : 
+1. Convert the double number to a String 
+2. Separate the String to two parts based on the decimal point. 
+3. Find the sum of digits on each part 
+For example 
+Input: 120.520
+Output: 3:7
+
+Program-39
+Write a method which accepts a number and return it in words. 
+Method Name 	getNumber 
+Method Description 	Get the number in words 
+Argument 	int 
+Return Type 	String 
+Logic 	Use mod(%) operator, StringBuffer and switch case 
+For Example 123 ->One Two Three
+
+Program-40
+Write a method which can check whether an entered number is palindrome or not.
+Method Name 	checkPalindrome 
+Method Description 	Check palindrome 
+Argument 	int 
+Return Type 	boolean 
+Logic 	Hint 1: 
+1. Convert the number to String 
+2. Check if the String and reverse of the String are equal 
+
+Program-41
+A class RussianMultiplication is given to you. 
+Implement the following method in that class: 
+public static int getProduct(int num1, int num2)
+If number is not positive then return -1. 
+Return the product of the two numbers. 
+Calculate the product using Russian multiplication process.
+Russian Multiplication Explained:
+The Russian multiplication, also called the Russian peasant algorithm, uses a halving and doubling method to multiply whole numbers
+When halving, disregard any remainder. Just put the quotient in the halving column
+When the number in the halving column is 1, cross out all rows that have an even number in the halving column the answer is found by adding the remaining numbers in the doubling column
+Example # 1: 11 × 12 
+Halving                              Doubling
+   11                    ×                  12 
+   5                      ×                  24 
+   2                      ×                  48  ---> Disregard this since 2 is even
+   1                      ×                  96 
+The product of 11 and 12 is: 12 + 24 + 96 = 132 
+
+Program-42
+Define a method which returns Collatz sequence for a give input value.
+Write the method with the following specifications: 
+Name of method: getCollatzSequence(int num) // which accepts an integer value as argument and return a string.
+Arguments: one argument of type integer
+Return Type: string
+Specifications: The value returned by the method getCollatzSequence() is determined by the following rules:
+If the given value is 5, return a string of Collatz Sequence as 5 16 8 4 2 1
+If the given value is negative, return "Error"
+Note:
+At each stage you must add the numbers to the output string and form the output as shown above. 
+The numbers in the output string must be separated by a space as shown above. 
+The output must include the given number and 1.
+If the number does not converge to 1 in 100 tries the return the String Does not Converge.
+
+Program-43
+Write logic for generating quadratic sequence as follows.
+Quadratic Sequence
+A quadratic sequence is a sequence of numbers in which the second difference between any two consecutive terms is constant.
+Example
+1,3,6,10,15,21,28,36,45,55, ...
+Sequence starts with 1 and then incremented by 2, 3, 4, 5, ...
+Define the following method
+Name of Method 	: getQuadricSequence()
+Arguments		: integer
+Return type		: String
+Example
+Input 	: 2
+Output	: 1,3	
+Input 	: 5
+Output	: 1,3,6,10,15	
+Input 	: 10
+Output	: 1,3,6,10,15,21,28,36,45,55
+Method should meet the following functional expectations
+1. Generate given sequence containing given number of terms
+2. Return null, if given number is negative or zero.
+
+Program-44
+Write logic for counting number of zeros in a given number. 
+Define following method
+Name of Method:	countZeros()
+Arguments	:  	integer
+Return type: 	integer 
+Input 	: 1234
+Output  : 0
+Input 	: 1230
+Output  : 1
+Input 	: 1000
+Output  : 3
+Input 	: 0
+Output  : 1
+Method should meet the functional expectations
+1. Return number of zeros in a given number.
+2. It should work for positive and negative and zero.
+
+Program-45
+Write a program to check the given number is and adam number are not.
+Explanation:
+If a number when reversed, the square of the number and the square of the reversed number should be number which are reverse to each other, is Adam number.
+Example: 
+Input: 12
+12 ^ 2 = 144
+21 ^ 2 = 441
+The reverse of 144 is equal to 441 and reverse of 441 is equal to 144 so., 12 is an Adam number.
+11, 12, 13, 21, 22, 31, 101, 102, 103, 111, 112, 113, 121 ... are Adam numbers.
+Write the methods with the following specifications: 
+Name of method isAdamNumber() // which accepts an integer as argument and return true if it is an adam number else return false.
+Arguments: One argument an integer value
+Return Type: an boolean value
+
+Example:
+Input: 121
+Output: true
+Input: 17
+Output: false
+Name of method getReverse() // which accepts an Integer value as argument and return the reverse of it.
+Arguments: One argument of integer value
+Return Type: an integer value
+Example:
+Input: 421
+Output: 124
+Input: 134
+Output: 431
+Name of method getSquare() // which accepts an Integer value as argument and square of the number
+Arguments: One argument of integer value
+Return Type: an integer value
+Example:
+Input: 12
+Output: 144
+Input: 36
+Output: 1296
+
+Program-46
+Define a method which accepts an integer value as argument, return "True" in the form of string, if the given number is an kaprekar number, in other case return "False" in the form of string.
+Explanation:
+In mathematics, a Kaprekar number for a given base is a non-negative integer, the representation of whose square in that base can be split into two parts that add up to the original number again. For instance, 45 is a Kaprekar number, because 45² = 2025 and 20 + 25 = 45.
+For instance, 297 is a Kaprekar number, because 297² = 88209 and 88+209 = 297.
+Write the method with the following specifications: 
+Name of method : isKaprekarNumber()// accepts an integer value as argument, return "True" if it is an kaprekar number, in other case return "False" in the form of string.
+Arguments: One argument of integer value.
+Return Type: A String value
+Specifications: The value returned by the method isKaprekarNumber() is determined by the following rules:
+If the given number is negative, return "-1" as string
+If the given number is zero, return "-2" as string
+In other case return "True" if it is a Kaprekar Number, else return "False".
+Example:
+Input: 9
+Output: "True"
+Input: 297
+Output: "True"
+Input: 367
+Output: "False"
+Input: -221
+Output: -1
+Input: 0
+Output: -2
+
+Program-47
+Write the program which accepts an integer value, and check the given number is an perfect, abundant or deficient number.
+Explanation:
+A number is called perfect if the sum of its proper divisors is equal to the number. If the 
+sum is less, it is called a deficient number. If the sum is more than the number, it is called 
+an abundant number.
+Example:
+The proper divisors of 28 are 1, 2, 4, 7, 14. The sum of those factors 1 + 2 + 4 + 7 + 14 is 
+28, which equal to the number. Hence it is called a perfect number.
+Similarly if the sum is less than the number, it is called a deficent number. If the sum is 
+greater than the number, it is called an abundant number.
+Note:
+A number is not a proper divisor of itself. Proper divisors of 6 are 1, 2 and 3 only.
+Define the below methods with the following specifications: 
+Name of method sumOfProperDivisors()// accepts an integer value, return 0 if the given number is an perfect number, -1 if it is an deficient, return 1 if it is an abundant number
+Arguments: One argument of integer value.
+Return Type: an integer value
+Specifications: The value returned by the method sumOfProperDivisors() is determined by the following rules:
+If the sum of proper divisors is equal to the given number, return 0.
+If the sum of proper divisors is more than the given number, return 1.
+If the sum of proper divisors is less than the given number, return -1.
+If the given number is negative, return -2.
+If the given number is zero, return -3.
+Example:
+Input: 28
+Output: 0
+Input: 12
+Output: 1
+Input: 23
+Output: -1
+Input: -12
+Output: -2
+Input: 0
+Output: -3
+
+Program-48
+Write a program which calculates the sum of all amicable pairs till 1 Million.
+Explanation:
+Amicable numbers are two different numbers 'a' and 'b' so related that the sum of the proper divisors of 'a' is equal to number 'b', simillerly sum of the proper divisors of 'b' is equal to number 'a'. 
+A proper divisor of a number is a positive integer divisor other than the number itself. 
+Example:
+220 and 284 are amicable pairs as the proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 and 110. Their sum is 284. The proper divisors of 284 are 1, 2, 4, 71, and 142, of which the sum is 220.
+Define the below methods with the following specifications: 
+Name of method sumOfAmicablePairs()// return the sum of all amicable pairs till 1 Million.
+Arguments: No
+Return Type: an Integer value
+Name of method getSumOfProperDivisors()//accepts an integer value as argument and return the sum of the proper divisors of the given number
+Arguments: One argument of integer value.
+Return Type: an integer value
+Example:
+Input : 220
+Output: 284
+Input : 1184
+Output: 1210
+
+Program-49
+Define a method which accepts the date of birth in the form of string and return the lucky number.
+Note: Ensure the input is an valid date.
+Explanation:
+Lucky number is sum of digits of the given date, till the sum is converted to single digit.
+For Date 27-JUL-2010, First convert the given date in the form of 27-7-2010 then,
+lucky number is calculated as:  
+2 + 7 + 7 + 2 + 0 + 1 + 0 = 19
+1 + 9 = 10
+1 + 0 = 1
+Output : 1
+Write the methods with the following specifications: 
+Name of method convertMMMtoMM() // which accept an month in string and return an integer indicating the month number
+Arguments: One argument of type String
+Return Type: an integer value
+For Example:
+Input: Mar / MAR / MARCH / March / MaRcH
+Output: 3
+
+Name of method getSumOfDigits() // which accepts an integer value as argument return a sum of digits of the given integer value.
+Arguments: One argument of type integer value
+Return Type: an integer value
+For Example:
+Input: 123
+Output: 6
+Input: 5678
+Output: 8
+Name of method getLuckyNumber() // which accepts an string, indicating the date of birth, return the lucky number.
+Arguments: One argument of type string value
+Return Type: an integer value
+For Example:
+Input: 15-March-2016 
+Output: 9
+Input: 15-Jan-2016
+Output: 7
+Input: 15-NOV-2016
+Output: 8
+
+
+
+
+Program-50
+Write logic for finding GCD of two given numbers
+Define following method
+Name of Method	:		getGCD()
+Arguments		:  	two integers
+Return type		: 	integer
+Input 	: 20  30
+Output  : 10
+Input 	: -10  30
+Output  : 15Input 	: -10  30
+Output  : 15
+Input 	: 123, 345
+Output  : 3
+Method should meet the following functional expectations
+1. Return GCD of two given numbers.
+2. Return -1, if any of given numbers is negative.
+
