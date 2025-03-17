@@ -1,4 +1,4 @@
-package Java8Feature;
+package Java8Feature.StreamQuestion;
 import java.util.Arrays;
 // import java.util.List;
 // import java.util.stream.Stream;
@@ -16,6 +16,7 @@ public class StreamDemo {
 
 		int sum2 = Arrays.stream(arr).filter(n -> n % 2==0).sum();
 		System.out.println(sum2);
+		
 		//List <String> list = Arrays.asList("Apple ", "Banana ","Chery");
 	    //Stream <String> mystream = list.stream();
 

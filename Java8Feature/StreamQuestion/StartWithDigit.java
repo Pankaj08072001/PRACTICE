@@ -1,4 +1,4 @@
-package Java8Feature;
+package Java8Feature.StreamQuestion;
 
 import java.util.Arrays;
 
