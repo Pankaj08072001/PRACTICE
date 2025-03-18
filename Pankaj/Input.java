@@ -14,7 +14,6 @@ public class Input {
 	}
 
 	public void main1() {
-		// TODO Auto-generated method stub
 		throw new UnsupportedOperationException("Unimplemented method 'main1'");
 	}
 
