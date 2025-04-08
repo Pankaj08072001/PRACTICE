@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ArmStrong {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+			Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your Number : ");
 		int num = sc.nextInt();
 		int lastnum;
