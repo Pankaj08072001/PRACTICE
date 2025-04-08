@@ -1,4 +1,4 @@
-package Exceptiontry;
+package MultiThreadingTry;
 
 class pankaj extends Thread{
 	public void run() {
