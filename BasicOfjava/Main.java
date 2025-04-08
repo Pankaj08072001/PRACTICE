@@ -1,6 +1,4 @@
 package BasicOfjava;
-
-public class Opps {
     abstract class Vehicle {
         private String make;
         private String model;
@@ -65,8 +63,7 @@ public class Opps {
 
     public class Main {
         public static void main(String[] args) {
-            Car myCar = new Car("Maruti", "Toyoto ", 2022);
-            
+            Car myCar = new Car(null, null, 0);
             ElectricCar myElectricCar = new ElectricCar("Tesla", "Model S", 2023);
 
             System.out.println("Car Make: " + myCar.getMake());
@@ -78,6 +75,3 @@ public class Opps {
         
         }
     }
-
-
-}
