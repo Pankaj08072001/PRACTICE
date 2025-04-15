@@ -16,7 +16,6 @@ public class StringSort {
 	  // String st = list.stream().min(c).get();
 	   String st = list.stream().max(c).get();
        System.out.println(st);
-
 	   list.stream().forEach(System.out::println);
 
 	}
