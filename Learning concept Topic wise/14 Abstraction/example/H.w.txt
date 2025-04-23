@@ -1,4 +1,0 @@
-                course
-    certification   gradation
-Excel(object)             ShortTerm             LongTerm
-                        C(obj)    C++(obj)           FullStack   DataScience

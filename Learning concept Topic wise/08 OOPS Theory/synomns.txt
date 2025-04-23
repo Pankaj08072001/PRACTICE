@@ -1,4 +1,0 @@
-variable = attributes = fields = states = data
-behaviour = method = function
-super class = parent class = base class 
-sub class = child class = derived class
