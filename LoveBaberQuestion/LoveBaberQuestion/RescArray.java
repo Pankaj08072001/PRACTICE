@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class RescArray{
 	public static void main(String[] args) {
 		int arr[]  ={10,15,20,19,21,48,57,46,23};
-		Arrays.sort(arr);
+		//Arrays.sort(arr);
 		res(arr);
 		System.out.println(Arrays.toString(arr));
 
