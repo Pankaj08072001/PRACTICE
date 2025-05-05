@@ -22,7 +22,7 @@ public class MergeTwoArr {
 		
 		// System.arraycopy(arr2,0,marge , arr2.length,arr1.length);
 
-		Arrays.sort(merge);
+		//Arrays.sort(merge);
 
 		System.out.println(Arrays.toString(merge));
 	}
