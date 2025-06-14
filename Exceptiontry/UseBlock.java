@@ -1,7 +1,5 @@
 package Exceptiontry;
 
-import java.util.Scanner;
-
 public class UseBlock {
 	public static void main(String[] args) {
 		// try (Scanner sc = new Scanner(System.in)) {
@@ -32,5 +30,8 @@ public class UseBlock {
 				letter += ch;
 			}
 		}
+		System.out.println("Letter is : "+letter);
+		System.out.println("Digit is : "+digit);
+
 	}
 }
